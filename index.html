@@ -1,144 +1,42 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
     <meta charset="UTF-8">
-    <title>欢迎</title>
-    <meta name="chenc" content="Runoob">
-    <meta name="description" content="空白">
-    <meta name="keywords" content="许愿">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="Robots" contect="all">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的博客</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container"><!-- 主体开始 -->
-        <div class="hander"><!-- 导航开始 -->
-            <nav id="nav-menu">
-                <a href="#" data-rel="home-me-section" class="active">首页</a>
-                <a href="#" data-rel="about-exp-section">关于</a>
-                <a href="#" data-rel="course-exp-section">历程</a>
-                <a href="#" data-rel="website-exp-section">站点</a>
+    <header id="header">
+        <div class="container">
+            <div class="logo"><a href="/">我的博客</a></div>
+            <nav>
+                <ul>
+                    <li><a href="/">首页</a></li>
+                    <li><a href="/about">关于我</a></li>
+                    <li><a href="/contact">联系我</a></li>
+                </ul>
             </nav>
-        </div><!-- 导航结束 -->
-        <div class="content"><!-- 内容开始 -->
-            <section class="home-me-section active-section"><!-- 首页开始 -->
-                <div class="main"><!-- 首页内容 -->)
-                    <img src="img/bgo.jpg" class="bgo" />
-                    <img src="https://q1.qlogo.cn/g?b=qq&nk=2313204584&s=640" class="ato" onclick="alert('戳我干嘛 ￣へ￣')" />
-                    <div class="name" onclick="javascript:this.innerHTML=(this.innerHTML=='空白'?'KongBai':'空白');">空白</div>
-                    <div class="motto" onclick="javascript:this.innerHTML=(this.innerHTML=='我曾尝试销声匿迹,但始终无人问津'?'I tried to disappear, but no one cared':'I tried to disappear, but no one cared');">我曾尝试销声匿迹<br>
-                        但始终无人问津</div>
-                    <div class="navo">
-                        <ul>
-                            <li><a href="https://qm.qq.com/q/iCw6KyCAus" target="_blank"><i class="fab fa-qq"></i></a></li><!-- QQ -->
-                        </ul>
-                    </div>
-                </div><!-- 首页内容结束 -->
-            </section><!-- 首页结束 -->
-            <section class="about-exp-section"><!-- 关于开始 -->
-                <div class="main"><!-- 关于内容 -->
-                    <img src="img/bgt.jpg" class="bgt" />
-                    <img src="https://q1.qlogo.cn/g?b=qq&nk=2313204584&s=640" class="ats" />
-                    <div class="about">
-                        <p>>_酷爱前端开发，会去自学感兴趣的一切东西
-                            <br>>_略懂H5，喜欢折腾，努力去解决遇到的一切问题
-                        </p>
-                    </div>
-                    <div class="about" style="margin-top:20px;">
-                        <p>希望与大家一起交流学习
-                            <br>这条路我才刚刚迈开了我的第一步
-                            <br>路上的坎一定会非常多，但在我眼里
-                            <br>没有什么问题是尝试不能解决的，
-                            <br>即使前方的路看似绝境，也要有给自己开出一条路的勇气
-                        </p>
-                    </div>
-                </div><!-- 关于内容结束 -->
-            </section><!-- 关于结束 -->
-            <section class="course-exp-section"><!-- 历程开始 -->
-                <div class="main"><!-- 历程内容 -->
-                    <img src="img/bgt.jpg" class="bgt" />
-                    <img src="https://q1.qlogo.cn/g?b=qq&nk=2313204584&s=640" class="ats" />
-                    <div class="box">
-                        <div id="boxs">
-                            <div class="track-list"><!-- 时间轴开始 -->
-                                <ul>
-                                    <li>
-                                        <i class="node-icon"><img src="img/tbl.svg"></i>
-                                        <span class="time" style="color:#2ECC71">2023-7-27</span>
-                                        <span class="txt" style="color:#2ECC71">搭建</span>
-                                    </li>
-                                </ul>
-                                <!-- 时间轴结束 -->
-                            </div>
-                        </div>
-                        <!-- <div style="color:#aaa;text-align:center;font-size:12px">注: 上下滑动查看历史进程</div>    -->
-                    </div>
-                </div><!-- 历程内容结束 -->
-            </section><!-- 历程结束 -->
-
-
-            <section class="website-exp-section"><!-- 站点开始 -->
-                <div class="main"><!-- 站点内容开始 -->
-                    <img src="img/bgt.jpg" class="bgt" />
-                    <img src="https://q1.qlogo.cn/g?b=qq&nk=2313204584&s=640" class="ats" />
-                    <div class="box">
-                        <div id="boxs">
-                            <a href="https://qm.qq.com/q/iCw6KyCAus" target="_blank">
-                                <div class="web">我的主页</div>
-                            </a>
-                            <!-- 站点一 -->
-                            <div class="web" onclick="alert('敬请期待')">敬请期待</div>
-                            <div class="tips">所有站点均正常运行</div>
-                        </div><!-- 站点内容结束 -->
-            </section><!-- 站点结束 -->
-        </div><!-- 内容结束 -->
-    </div><!-- 主体结束 -->
-    <div class="footer"><!-- 底部版权 -->
-        <span id="sitetime"></span><!-- 运行时间 -->
-        <a href="http://xuyuany.cn/" target="_blank">
-            <div class="web"><img src="./img/beian.png" style="height: 1em;"></div>
-        </a>
-    </div><!-- 版权结束 -->
-    <div id="tp-weather-widget"></div><!-- 天气插件 -->
-    <script>
-        (function(a, h, g, f, e, d, c, b) {
-            b = function() {
-                d = h.createElement(g);
-                c = h.getElementsByTagName(g)[0];
-                d.src = e;
-                d.charset = "utf-8";
-                d.async = 1;
-                c.parentNode.insertBefore(d, c)
-            };
-            a["SeniverseWeatherWidgetObject"] = f;
-            a[f] || (a[f] = function() {
-                (a[f].q = a[f].q || []).push(arguments)
-            });
-            a[f].l = +new Date();
-            if (a.attachEvent) {
-                a.attachEvent("onload", b)
-            } else {
-                a.addEventListener("load", b, false)
-            }
-        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
-        window.SeniverseWeatherWidget('show', {
-            flavor: "bubble",
-            location: "WX4FBXXFKE4F",
-            geolocation: true,
-            language: "zh-Hans",
-            unit: "c",
-            theme: "auto",
-            token: "ac1d036a-99f3-4f88-ae98-f795bb93a9f0",
-            hover: "disabled",
-            container: "tp-weather-widget"
-        })
-    </script><!-- 天气插件结束 -->
-    <script src="./js/index.js"></script><!-- 核心插件 -->
-    <script src="./js/all.js"></script><!-- 图标库 -->
-    <script src="./js/Sitetime.js"></script><!-- 运行时间 -->
-    <script src="./js/Mouse.js"></script><!-- 点击烟花特效 -->
-</body>
-
-</html>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
+            <div class="posts">
+                <!-- 每个文章列表项 -->
+                <article class="post">
+                    <h2><a href="/post/1">文章标题1</a></h2>
+                    <p class="date">2023年4月1日</p>
+                    <p class="summary">这是文章的摘要，可以写一些关于文章的介绍或者内容提要。</p>
+                </article>
+                <!-- 每个文章列表项 -->
+                <article class="post">
+                    <h2><a href="/post/2">文章标题2</a></h2>
+                    <p class="date">2023年4月2日</p>
+                    <p class="summary">这是文章的摘要，可以写一些关于文章的介绍或者内容提要。</p>
+                </article>
+            </div>
+            <!-- 侧边栏 -->
+            <aside id="sidebar">
+                <div class="widget search-widget">
+                    <h3>搜索</h3> 搜索框代码，可以根据需要添加或修改。例如：<input type="text" placeholder="输入关键词进行搜索..."></input></div> 侧边栏的其他内容，可以根据需要添加或修改。例如：<div class="widget categories-widget"><h3>分类</h3><ul><li><a href="/category/1">分类1</a></li><li><a href="/category/2">分类2</a></li><li><a href="/category/3">分类3</a></li></ul></div></aside> 侧边栏的底部，可以根据需要添加或修改。例如：<div class="widget social-widget"><h3>社交链接</h3><ul><li><a href="#" target="_blank"><img src="/images/icon-wechat.png" alt="微信"></a></li><li><a href="#" target="_blank"><img src="/images/icon-weibo.png" alt="微博"></a></li><li><a href="#" target="_blank"><img src="/images/icon-github.png" alt="GitHub"></a></li></ul></div></aside> 页脚，可以根据需要添加或修改。例如：<footer id="footer"><p>© Copyright 2023 我的博客. All Rights Reserved.</p></footer></div></main><script src="/js/main.js"></script_
+ 
