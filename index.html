@@ -1,48 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
-    <title>My Simple Blog</title>
-</head>
-<body>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>XIBINの小屋</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="/imgs/icos/LOGO.png">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
 
-    <h1>Welcome to Superyueze cinema!</h1>
+				<!-- Header -->
+					<header id="header">
+						<h1>XIBINの小屋</h1>
+						<p>欢迎您 &nbsp;&bull;&nbsp;来到 &nbsp;&bull;&nbsp; XIBINの小屋</p>
+						
+						<nav>
+							<ul>
+								<li><a href="#" class="icon brands fa-wechat"><img src="assets/webfonts/wechat.png" class="wechat"><span class="label">微信</span></a></li>
+								<li><a href="#" class="icon brands fa-wechat"><img src="assets/webfonts/instruction.png" class="wechat"><span class="label">编程</span></a></li>
+								<li><a href="#" class="icon brands fa-wechat"><img src="assets/webfonts/activity-source.png" class="wechat"><span class="label">更多</span></a></li>
+								<li><a href="#" class="icon brands fa-wechat"><img src="assets/webfonts/source-code.png" class="wechat"><span class="label">网页</span></a></li>
+								<li><a href="#" class="icon solid fa-wechat"><img src="assets/webfonts/send-email.png" class="wechat"><span class="label">邮箱</span></a></li>
+							</ul>
+						</nav>
+						<p id="countdown-text"><span id="countdown">15</span> 秒后自动前往博客页···</p>
+					</header>
+					
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; 版权所有: <a href="index/home.html">XIBINの小屋</a>.</span>
+					</footer>
 
-    <h2>《速度与激情10》</h2>
-
-    <!-- Video with Plyr -->
-    <div>
-        <video controls crossorigin playsinline poster="video-poster.jpg" id="player">
-            <source src="https://112-101-10-81.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-289/a49290b9/1816127427-0/a49290b90fb3ffa5fa2ad35e15a9e921/c-m13?v=5&t=1703420136&s=1703420136ab49fbb029de533eddc61a8429c21cdf&r=NC6K3Y&bzc=1&bzs=1816396071&filename=%E9%98%B3%E5%85%89%E7%94%B5%E5%BD%B1dygod.org.%E9%80%9F%E5%BA%A6%E4%B8%8E%E6%BF%80%E6%83%8510.2023.BD.1080P.%E5%9B%BD%E8%8B%B1%E5%8F%8C%E8%AF%AD%E4%B8%AD%E5%AD%97.mkv&x-mf-biz-cid=59f04adb-9bf6-437f-8fc3-60883d14267b-c4937c&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=1826477e-6bb6-44b8-a314-c2b8efd5e1ca-1-cd8a62355" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
- superyueze ©版权所有 2023 Powered by Chatgpt/Githubpage
-
-    <!-- Image with Lightbox -->
-    <div>
-        <a href="https://59-47-225-46.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-350/b0087b3f/1816396071-0/b0087b3f3b31a151da4426447330c55e/c-m17?v=5&t=1703473299&s=17034732998b06e212238a0641b03cb15f6b9675f3&r=8D9G7L&bzc=1&bzs=1816396071&filename=1cbe8d0afbfe431863992961725add0b.jpg&x-mf-biz-cid=db4e2cc6-79f3-410b-a9d6-e74802f9d433-584000&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=60dc5c6a-43f3-4704-b0b0-1466283c792e-1-cd8a62355" data-lightbox="image-1" data-title="Your Image Title">
-            <img src="https://59-47-225-46.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-350/b0087b3f/1816396071-0/b0087b3f3b31a151da4426447330c55e/c-m17?v=5&t=1703473299&s=17034732998b06e212238a0641b03cb15f6b9675f3&r=8D9G7L&bzc=1&bzs=1816396071&filename=1cbe8d0afbfe431863992961725add0b.jpg&x-mf-biz-cid=db4e2cc6-79f3-410b-a9d6-e74802f9d433-584000&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=60dc5c6a-43f3-4704-b0b0-1466283c792e-1-cd8a62355" alt="Your Image Alt Text">
-        </a>
-    </div>
-
-    <script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-
-    <script>
-        // Initialize Plyr
-        const player = new Plyr('#player');
-
-        // Initialize Lightbox
-        lightbox.option({
-            'resizeDuration': 200,
-            'wrapAround': true
-        });
-    </script>
-
-</body>
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+		<script>
+			var preloadUrl = "index/home.html"; // 需要预加载的页面地址
+			var iframe = document.createElement("iframe"); // 创建一个iframe元素
+			iframe.style.display = "none"; // 将iframe元素隐藏
+			iframe.src = preloadUrl; // 设置预加载页面的地址
+			document.body.appendChild(iframe); // 将iframe元素添加到body中，开始预加载
+		
+			var count = 5; // 设置倒计时时间
+			var intervalId = setInterval(function() {
+				count--;
+				document.getElementById("countdown").innerHTML = count; // 更新倒计时数字
+				if (count <= 0) {
+					clearInterval(intervalId); // 清除计时器
+					document.getElementById("countdown-text").innerHTML = "欢迎访问XIBIN的小屋"; // 替换倒计时提示为“欢迎访问”
+					window.location.href = "index/home.html"; // 跳转到下一个页面
+				}
+			}, 1000);
+		
+			document.addEventListener("click", function() {
+				clearInterval(intervalId); // 清除计时器
+				document.getElementById("countdown-text").innerHTML = ""; // 替换倒计时提示为“欢迎访问”
+			});
+		</script>
+		
+		
+	</body>
 </html>
-      
