@@ -60,7 +60,7 @@
     
 
     <!-- 页面2 -->
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -84,14 +84,22 @@
 
     <!-- Image with Lightbox -->
 
+    <script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <script>
+        // Initialize Plyr
+        const player = new Plyr('#player');
+
+        // Initialize Lightbox
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true
+        });
+    </script>
 
 </body>
-</html>        
-          
-            
-        
-        
-    </div>
+</html>
     <!-- 页面3 -->
     <div class="topic-1" id="page2">
         
@@ -114,7 +122,7 @@
     <script>
         // 打字机
             const text = document.querySelector('.text');
-            const txt  =["北极光之夜。","夜越黑，星星越亮。","答案在风中飘荡。"]; 
+            const txt  =["Superyueze","用乐趣创造无限可能","坚持自己的兴趣"]; 
             var index=0;
             var xiaBiao= 0;
             var huan = true;
@@ -154,7 +162,8 @@
         document.getElementById('day').innerHTML = day;
     </script>
                 
-   <h3>Powered by xinbin/Superyueze/Chatgpt❤️</h3> 
+   <h2>Powered by xinbin/Superyueze/Chatgpt❤️</h2> 
     
 </body>
 </html>
+    Powered by xinbin/Superyueze/Chatgpt❤️
