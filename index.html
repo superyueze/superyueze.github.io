@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superyuezeの小屋</title>
+    <link rel="icon" href="../imgs/icos/LOGO.png" type ="image/x-icon">
+    <link rel="stylesheet" href="../style/home.css">
+    <link rel="stylesheet" href="../style/joint.css">
+    <script type="text/javascript" src="../js/index.js"></script>
+    <style>
+        html,body{
+            margin: 0px ;
+            min-width: 720px ;
+        }       
+    </style>
+</head>
+<body background="../imgs/Page/werc.jpg"style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
+    
+    <!-- 悬浮栏 -->
+    <div class="go-top " id="page"> 
+        <button onclick="scrollToTop()" class="go-div-1">
+            <img src="../imgs/Page/arrowhead1.gif" class="go-div-img" style="transform:rotate(180deg); ">
+        </button>
+        
+    </div>
+    <!-- 标题 -->
+    <div class="title" id="page" >
+        <div class="title-1">
+           <h1 class="font-1">
+                <div class=" title-box"><a href="../index/home.html" class="title-a fl">yuezeの小屋</a>
+                    <a href=""><img src="../imgs/Page/load.gif" class="title-img fr"></a>
+                    <a href="tmeweb.html" class="title-a title-a-mr fr">时间轴</a>
+                    <a href="disks.html" class="title-a title-a-mr fr">网盘</a>
+                    <a href="about.html" class="title-a title-a-mr fr">关于</a>
+                    <a href="home.html" class="title-a title-a-mr fr">首页</a>
+                </div>
+           </h1>
+        </div>
+    </div>
+    <!-- 页面1 -->
+    <div class="topic">
+        <div class="topic-box-1">
+            <h1 class="topic-h1"><a href="#" class="title-a">yuezeの小屋</a></h1>
+        </div>
+        <div class="topic-box-2">
+            <h1>
+                <span class="text" ></span>
+            </h1>
+        </div>
+        <div class="topic-box-3" >
+            
+            <button onclick="smoothScroll(page1)" class="topic-bu">
+                <img src="../imgs/Page/arrowhead2.gif" alt="向下看哦" class="topic-box-3" >
+            </button>
+        
+        </div>
+        
+    </div>
+    
+
+    <!-- 页面2 -->
+    <div class="topic-1" id="page1">
+        
+            
+            <div class="container">	
+                <div class='left'>
+                    <h1 class="topic-1-h1">
+                        <img class="topic-div-1-img" src="../imgs/icos/LOGO.png" alt="你的网络不好喔！">
+                        yuezeの小屋
+                    </h1>
+                    <p class="topic-1-p">
+                        欢迎您来到我的小屋！
+                    </p>
+                    
+
+                </div>
+                <div class='right'>
+                  
+                  
+                </div>
+              </div> 
+            
+          
+            
+        
+        
+    </div>
+    <!-- 页面3 -->
+    <div class="topic-1" id="page2">
+        
+    </div>
+    <!-- 末尾 -->
+    <div class="footer">
+        
+        <div class="fr footer-div">
+            
+            
+            <div class="footer-div-sj">
+                <h1 class="footer-clock-font"><span id="clock" ></span></h1>
+                <script type="text/javascript">
+                var clock = new Clock();
+                clock.display(document.getElementById("clock"));
+                </script>
+
+    
+    <!-- 打字机函数 -->
+    <script>
+        // 打字机
+            const text = document.querySelector('.text');
+            const txt  =["北极光之夜。","夜越黑，星星越亮。","答案在风中飘荡。"]; 
+            var index=0;
+            var xiaBiao= 0;
+            var huan = true;
+            setInterval(function(){
+            if(huan){      
+                text.innerHTML = txt[xiaBiao].slice(0,++index);
+                console.log(index);
+            }
+            else{
+                text.innerHTML = txt[xiaBiao].slice(0,index--);
+                console.log(index);
+            }
+            if(index==txt[xiaBiao].length+3)
+            {
+            huan = false;
+            }
+            else if(index<0)
+            {
+            index = 0;
+            huan = true;
+            xiaBiao++;
+            if(xiaBiao>=txt.length)
+            {
+                xiaBiao=0; 
+            }
+            }
+            },200)
+    </script>
+   <!-- 日期函数 -->
+    <script>
+        date = new Date();
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        day = date.getDate();
+        document.getElementById('year').innerHTML = year;
+        document.getElementById('month').innerHTML = month;
+        document.getElementById('day').innerHTML = day;
+    </script>
+    
+    
+</body>
+</html>
