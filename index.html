@@ -59,27 +59,52 @@
     
 
     <!-- 页面2 -->
-    <div class="topic-1" id="page1">
-        
-            
-            <div class="container">	
-                <div class='left'>
-                    <h1 class="topic-1-h1">
-                        <img class="topic-div-1-img" src="../imgs/icos/LOGO.png" alt="你的网络不好喔！">
-                        yuezeの小屋
-                    </h1>
-                    <p class="topic-1-p">
-                        欢迎您来到我的小屋！
-                    </p>
-                    
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
+    <title>My Simple Blog</title>
+</head>
+<body>
 
-                </div>
-                <div class='right'>
-                  
-                  
-                </div>
-              </div> 
-            
+    <h1>Welcome to My Blog!</h1>
+
+    <h2>Latest Post</h2>
+
+    <!-- Video with Plyr -->
+    <div>
+        <video controls crossorigin playsinline poster="video-poster.jpg" id="player">
+            <source src="https://vip.123pan.cn/1816396071/2.3/lv_0_20231231220152.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Image with Lightbox -->
+    <div>
+        <a href="https://www.example.com/your-image.jpg" data-lightbox="image-1" data-title="Your Image Title">
+            <img src="https://www.example.com/your-image.jpg" alt="Your Image Alt Text">
+        </a>
+    </div>
+
+    <script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <script>
+        // Initialize Plyr
+        const player = new Plyr('#player');
+
+        // Initialize Lightbox
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true
+        });
+    </script>
+
+</body>
+</html>        
           
             
         
