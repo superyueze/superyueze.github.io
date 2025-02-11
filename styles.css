@@ -31,3 +31,46 @@
    main {
      padding: 20px;
    }
+
+/* 手机样式（默认样式） */
+   nav ul li {
+     display: block; /* 将导航项垂直排列 */
+     margin: 5px 0;
+   }
+
+   /* 平板样式（屏幕宽度 ≥ 768px） */
+   @media (min-width: 768px) {
+     nav ul li {
+       display: inline; /* 将导航项水平排列 */
+       margin: 0 10px;
+     }
+   }
+
+   /* 电脑样式（屏幕宽度 ≥ 1024px） */
+   @media (min-width: 1024px) {
+     main {
+       width: 80%;
+       margin: 0 auto; /* 居中内容 */
+     }
+   }
+
+img {
+     max-width: 100%; /* 图片不超过容器宽度 */
+     height: auto; /* 保持图片比例 */
+   }
+
+   body {
+     font-size: 16px;
+   }
+
+   @media (min-width: 768px) {
+     body {
+       font-size: 18px;
+     }
+   }
+
+   @media (min-width: 1024px) {
+     body {
+       font-size: 20px;
+     }
+   }
